@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Sketsa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navigation-bar">
+        <div class="logo"></div>
+        <div class="filters">
+            <select name="genre" id="genre-select" class="filter-dropdown">
+                <option value="">Semua Genre</option>
+                <option value="" disabled>--- Genre ---</option>
+                <option value="action">Action</option>
+                <option value="comedy">Komedi</option>
+                <option value="drama">Drama</option>
+                <option value="horror">Horor</option>
+                <option value="animation">Animasi</option>
+                <option value="misteri">Misteri</option>
+                <option value="romance">Romance</option>
+                <option value="thriller">Thriller</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="adventure">Adventure</option>
+                <option value="history">history</option>
+                <option value="war">War</option>
+                <option value="sport">Sport</option>
+                <option value="sci-fi">Sci-Fi</option>
+            </select>
+
+            <select name="negara" id="negara-select" class="filter-dropdown">
+                <option value="">Semua Negara</option>
+                <option value="" disabled>--- Negara ---</option>
+                <option value="indonesia">Indonesia</option>
+                <option value="usa">USA</option>
+                <option value="japan">Jepang</option>
+                <option value="koreaselatan">Korea Selatan</option>
+                <option value="thailand">Thailand</option>
+                <option value="china">China</option>
+                <option value="uk">United Kingdom</option>
+                <option value="malaysia">Malaysia</option>
+                <option value="jerman">Jerman</option>
+                <option value="france">Prancis</option>
+            </select>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="promo-section">
+            <div class="placeholder ad-placeholder small">
+            </div>
+            <div class="placeholder promo-carousel large">
+                <div class="carousel-slide active" data-target-url="movie.html?id=andrew-schulz-life-2025">
+                    <img src="images/andrewschulzlife.jpg" alt="Promosi 1">
+                </div>
+                <div class="carousel-slide" data-target-url="movie.html?id=downfall-2004">
+                    <img src="https://www.simbasible.com/wp-content/uploads/2020/07/4.jpg" alt="Promosi 2">
+                </div>
+                <div class="carousel-slide" data-target-url="movie.html?id=attack-on-titan-last-attack-2024">
+                    <img src="https://wallpapercave.com/wp/wp4769472.jpg" alt="Promosi 3">
+                </div>
+                <div class="carousel-slide" data-target-url="movie.html?id=napoleon-1927">
+                    <img src="https://www.premiere.fr/sites/default/files/styles/scale_crop_1280x720/public/2024-02/napoleon-1536x864.jpg" alt="Promosi 4">
+                </div>
+            </div>
+            <div class="placeholder ad-placeholder small">
+            </div>
+        </section>
+
+        <section class="content-grid">
+        </section>
+    </main>
+    <footer>
+        <p class="developer-info">Developer Website: Panca Walendra Putra</p>
+        <p class="social-links">
+            See me at:
+            <a href="https://www.wa.me/6285215327903" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Whatsapp</a>
+        </p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

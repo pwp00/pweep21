@@ -1,0 +1,411 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    padding: 0 5%;
+    line-height: 1.5;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.placeholder {
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #555;
+    padding: 10px;
+    min-height: 50px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    background-color: #eeeeee;
+    padding: 6px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.logo {
+    width: 130px;
+    height: 50px;
+    background-image: url('logo3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    margin-right: 25px;
+    flex-shrink: 0;
+}
+
+.filters {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+}
+
+.filter-dropdown {
+    padding: 6px 12px;
+    border: 1px solid #cc0000;
+    border-radius: 4px;
+    background-color: #eeeeee;
+    cursor: pointer;
+    color: #444;
+    font-size: 0.95em;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 28px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 512 512'%3E%3Cpath fill='%23cc0000' d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 0.75em;
+}
+
+.promo-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.ad-placeholder.small {
+    flex: 1;
+    aspect-ratio: 9 / 12;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #f0f0f0;
+}
+
+.promo-carousel.large {
+    flex: 2.5;
+    aspect-ratio: 16 / 9;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    display: block;
+}
+
+.promo-section .ad-placeholder.small:first-of-type {
+    background-image: url('https://rustywalls.com/cdn/shop/products/57_811d9cd3-c240-4549-a674-6a29b97a0dd6.jpg?v=1536370675');
+}
+
+.promo-section .ad-placeholder.small:last-of-type {
+    background-image: url('https://garageartsigns.com/wp-content/uploads/2014/11/RG1689-1.jpg');
+}
+
+.promo-carousel.large .carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.promo-carousel.large .carousel-slide.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.promo-carousel.large .carousel-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 170px));
+    gap: 25px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+    clear: both;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.content-card {
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.content-card:hover {
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rating-badge {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(187, 141, 2, 0.7);
+    color: #ffffff;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: .78em;
+    font-weight: bold;
+    z-index: 10;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.rating-badge .star-icon {
+    margin-right: 4px;
+    color: yellow;
+}
+
+.card-image {
+    aspect-ratio: 9 / 12;
+    background-color: #d9d9d9;
+    display: block;
+    width: 100%;
+    color: #555;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 4px 4px 0 0;
+    font-size: 0.9em;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.card-info {
+    padding: 12px 15px;
+    flex-grow: 1;
+    font-size: 0.8em;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.card-meta {
+    font-size: 1em;
+    color: #777;
+    line-height: 1.4;
+}
+
+footer {
+    background-color: #0d8094;
+    color: #ffffff;
+    padding: 25px 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+footer .developer-info {
+    margin: 0 0 10px 0;
+    font-weight: 500;
+}
+
+footer .social-links {
+    margin: 0;
+}
+
+footer .social-links a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+footer .social-links a:hover {
+    color: #cce5ff;
+    text-decoration: underline;
+}
+
+.movie-detail-content {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.video-area {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #222;
+    margin-bottom: 25px;
+    border-radius: 6px;
+}
+
+.video-area iframe,
+.video-area video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 6px;
+}
+
+.movie-info-details {
+    background-color: #f8f9fa;
+    padding: 20px 25px;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+}
+
+.movie-info-details h1 {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #212529;
+}
+
+.movie-info-details p {
+    font-size: 1em;
+    color: #495057;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.movie-info-details p strong {
+    color: #343a40;
+    min-width: 80px;
+    display: inline-block;
+}
+
+.episode-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 12px 15px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.episode-button {
+    padding: 7px 14px;
+    border: none;
+    background-color: #8B0000;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9em;
+    min-width: 45px;
+    text-align: center;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.episode-button:hover {
+    background-color: #A52A2A;
+    transform: translateY(-1px);
+}
+
+.episode-button.active {
+    background-color: #DC143C;
+    box-shadow: 0 0 6px rgba(220, 20, 60, 0.6);
+    transform: scale(1.03);
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+
+    .promo-section .ad-placeholder.small {
+        display: none;
+    }
+
+    .promo-section {
+        display: block;
+        gap: 0;
+        max-width: 100%;
+    }
+
+    .promo-item.carousel-item,
+    .promo-carousel.large {
+        flex: none;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-column: 1 / -1;
+    }
+
+    .content-grid {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 15px;
+        width: 100%;
+    }
+
+    .navigation-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+    .filters {
+        margin-left: 0;
+    }
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+
+     .header-container {
+          padding: 10px 0;
+     }
+     .logo {
+          width: 150px;
+          height: calc(150px / (180 / 75));
+     }
+}
