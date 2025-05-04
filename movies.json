@@ -37,7 +37,7 @@
       "title": "Rookies",
       "year": 2008,
       "type": "Serial",
-      "genres": ["drama", "sport"],
+      "genres": ["drama"],
       "country": "japan",
       "rating": 7.7,
       "thumbnail": "https://s0.lk21static.buzz/wp-content/uploads/2024/12/film-rookies-2008-lk21-d21.jpg.webp",
@@ -101,17 +101,6 @@
                     "https://cdn.turboviplay.com/data1/67efb850154ae/67efb850154ae.m3u8",
                     "https://cdn.turboviplay.com/data1/67f13527ddeb0/67f13527ddeb0.m3u8"
                     ]
-    },
-    {
-      "id": "napoleon-2023",
-      "title": "Napoleon",
-      "year": 2023,
-      "type": "Movie",
-      "genres": ["action", "romance", "war"],
-      "country": "uk",
-      "rating": 6.3,
-      "thumbnail": "https://s0.lk21static.buzz/wp-content/uploads/2024/01/film-napoleon-2023-lk21-d21.jpg.webp",
-      "videoLink": "https://hmqji2fcn4hq.milocdn.com/hls2/01/02228/6cvguq9v5kgd_,l,n,.urlset/master.m3u8?t=baMNA44AShOmjl_N3viUEuPmnO8bxgjmB6Jp1KSDQm0&s=1746111826&e=129600&f=11142389&srv=W6ZGiFkCPJnVz&i=0.4&sp=500&p1=W6ZGiFkCPJnVz&p2=W6ZGiFkCPJnVz&asn=7713"
     },
     {
       "id": "demon-slayer-mugen-train-2020",
@@ -409,17 +398,6 @@
     "videoLink": "https://cdn1.turboviplay.com/data2/QeeGDup7m5wo8yv1vdAq/QeeGDup7m5wo8yv1vdAq.m3u8"
   },
   {
-    "id": "napoleon-1927",
-    "title": "Napoleon",
-    "year": 1927,
-    "type": "Movie",
-    "genres": ["history", "drama", "war"],
-    "country": "france",
-    "rating": 8.2,
-    "thumbnail": "https://image.tmdb.org/t/p/w500/x0duTwP9rjVpa2O13r1GK8j61qG.jpg",
-    "videoLink": "https://ff8nf42b8jvmj4a.acek-cdn.com/hls2/01/01861/7q7tsd2x6ugi_,l,n,h,.urlset/master.m3u8?t=17w4KASNhH60Bbr5VUPJHFSmP5Gw1i4u_D3g-1bkZHg&s=1746112423&e=129600&f=9309496&srv=bg4L2KNHtnpo&i=0.4&sp=500&p1=bg4L2KNHtnpo&p2=bg4L2KNHtnpo&asn=7713"
-  },
-  {
     "id": "bohemian-rhapsody-2018",
     "title": "Bohemian Rhapsody",
     "year": 2018,
@@ -440,5 +418,247 @@
     "rating": 7.1,
     "thumbnail": "https://image.tmdb.org/t/p/w300/zxA7bL9qOnU49NXIqpnyJlRvkqs.jpg",
     "videoLink": "https://cdn4.turboviplay.com/data2/6724fb5c587b1/6724fb5c587b1.m3u8"
+  },
+  {
+    "id": "peninsula-train-to-busan-2-2020",
+    "title": "Peninsula (Train to Busan 2)",
+    "year": 2020,
+    "type": "Movie",
+    "genres": ["adventure", "animation", "comedy", "fantasy"],
+    "country": "usa",
+    "rating": 5.5,
+    "thumbnail": "https://s1.lk21static.buzz/wp-content/uploads/2020/07/film-peninsula-train-to-busan-2-2020-lk21.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data2/aIuFmtfmXnO2AOcmQiqH/aIuFmtfmXnO2AOcmQiqH.m3u8"
+  },
+  {
+    "id": "interstellar-2014",
+    "title": "Interstellar",
+    "year": 2014,
+    "type": "Movie",
+    "genres": ["adventure", "drama"],
+    "country": "uk",
+    "rating": 8.6,
+    "thumbnail": "https://s5.lk21static.buzz/wp-content/uploads/2015/12/film-interstellar-2014.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data2/v6ke4APN9VBC3x3iKDhd/v6ke4APN9VBC3x3iKDhd.m3u8"
+  },
+  {
+    "id": "the-prosecutor-2024",
+    "title": "The Prosecutor",
+    "year": 2024,
+    "type": "Movie",
+    "genres": ["action", "thriller"],
+    "country": "china",
+    "rating": 6.7,
+    "thumbnail": "https://s1.lk21static.buzz/wp-content/uploads/2025/04/film-the-prosecutor-2024-lk21-d21.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data1/67f34d12c0fb3/67f34d12c0fb3.m3u8"
+  },
+  {
+    "id": "rise-of-the-planet-of-the-apes-2011",
+    "title": "Rise of the Planet of the Apes",
+    "year": 2011,
+    "type": "Movie",
+    "genres": ["action", "drama"],
+    "country": "usa",
+    "rating": 7.6,
+    "thumbnail": "https://s1.lk21static.buzz/wp-content/uploads/2015/12/film-rise-of-the-planet-of-the-apes-2011.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data2/VcV0smPgmf1jQheLzb6y/VcV0smPgmf1jQheLzb6y.m3u8"
+  },
+  {
+    "id": "dawn-of-the-planet-of-the-apes-2014",
+    "title": "Dawn of the Planet of the Apes",
+    "year": 2014,
+    "type": "Movie",
+    "genres": ["action", "drama"],
+    "country": "usa",
+    "rating": 7.6,
+    "thumbnail": "https://s3.lk21static.buzz/wp-content/uploads/2016/01/film-dawn-of-the-planet-of-the-apes-2014.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data2/q4hpvTSLnwKIbVCQIJB6/q4hpvTSLnwKIbVCQIJB6.m3u8"
+  },
+  {
+    "id": "war-for-the-planet-of-the-apes-2017",
+    "title": "War for the Planet of the Apes",
+    "year": 2017,
+    "type": "Movie",
+    "genres": ["action", "drama", "adventure", "thriller"],
+    "country": "usa",
+    "rating": 7.4,
+    "thumbnail": "https://s0.lk21static.buzz/wp-content/uploads/2017/11/film-war-planet-apes-2017.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data2/cM6yIhl2iNjAPo0PlUSb/cM6yIhl2iNjAPo0PlUSb.m3u8"
+  },
+  {
+    "id": "kingdom-of-the-planet-of-the-apes-2024",
+    "title": "Kingdom of the Planet of the Apes",
+    "year": 2024,
+    "type": "Movie",
+    "genres": ["action", "drama", "adventure"],
+    "country": "usa",
+    "rating": 7.2,
+    "thumbnail": "https://s7.lk21static.buzz/wp-content/uploads/2024/07/film-kingdom-of-the-planet-of-the-apes-2024-lk21-d21.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data1/668cf36a6d2a8/668cf36a6d2a8.m3u8"
+  },
+  {
+    "id": "crosspoint-2024",
+    "title": "Crosspoint",
+    "year": 2024,
+    "type": "Movie",
+    "genres": ["action", "drama", "thriller"],
+    "country": "japan",
+    "rating": 7.7,
+    "thumbnail": "https://s2.lk21static.buzz/wp-content/uploads/2025/03/film-crosspoint-2024-lk21-d21.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data1/67d49b844cd94/67d49b844cd94.m3u8"
+  },
+  {
+    "id": "mongol-the-rise-of-genghis-khan-2007",
+    "title": "Mongol: The Rise of Genghis Khan",
+    "year": 2007,
+    "type": "Movie",
+    "genres": ["adventure", "drama"],
+    "country": "jerman",
+    "rating": 7.2,
+    "thumbnail": "https://s3.lk21static.buzz/wp-content/uploads/2016/09/film-mongol-the-rise-of-genghis-khan-2007.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data2/H0Grq68B8T6C8o3uuEbk/H0Grq68B8T6C8o3uuEbk.m3u8"
+  },
+  {
+    "id": "alexander-2004",
+    "title": "Alexander",
+    "year": 2004,
+    "type": "Movie",
+    "genres": ["adventure", "drama", "action", "history", "romance", "war"],
+    "country": "france",
+    "rating": 5.6,
+    "thumbnail": "https://s2.lk21static.buzz/wp-content/uploads/2017/07/film-alexander-2004.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data2/5aDhDy23MSPwdHBSBbic/5aDhDy23MSPwdHBSBbic.m3u8"
+  },
+  {
+    "id": "alexander-the-great-1956",
+    "title": "Alexander the Great",
+    "year": 1956,
+    "type": "Movie",
+    "genres": ["drama", "history", "war"],
+    "country": "usa",
+    "rating": 5.8,
+    "thumbnail": "https://s5.lk21static.buzz/wp-content/uploads/2020/08/film-alexander-the-great-1956-lk21.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data2/7o6x2ti1g1fTtNJPpwL0/7o6x2ti1g1fTtNJPpwL0.m3u8"
+  },
+  {
+    "id": "resident-evil-degeneration-2008",
+    "title": "Resident Evil: Degeneration",
+    "year": 2008,
+    "type": "Movie",
+    "genres": ["action", "animation", "horror"],
+    "country": "japan",
+    "rating": 6.4,
+    "thumbnail": "https://s4.lk21static.buzz/wp-content/uploads/2016/04/film-resident-evil-degeneration-2008.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data2/N70nYoZPbR2YsxUPM9u3/N70nYoZPbR2YsxUPM9u3.m3u8"
+  },
+  {
+    "id": "resident-evil-damnation-2012",
+    "title": "Resident Evil: Damnation",
+    "year": 2012,
+    "type": "Movie",
+    "genres": ["action", "animation", "horror"],
+    "country": "japan",
+    "rating": 6.4,
+    "thumbnail": "https://s5.lk21static.buzz/wp-content/uploads/2016/09/film-resident-evil-damnation-2012.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data2/YeSHTAeCfIVTpF6VT6Cc/YeSHTAeCfIVTpF6VT6Cc.m3u8"
+  },
+  {
+    "id": "resident-evil-death-island-2023",
+    "title": "Resident Evil: Death Island",
+    "year": 2023,
+    "type": "Movie",
+    "genres": ["action", "adventure", "animation"],
+    "country": "japan",
+    "rating": 6.4,
+    "thumbnail": "https://s5.lk21static.buzz/wp-content/uploads/2023/07/film-resident-evil-death-island-2023-lk21-d21.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data2/HfHdmEaX8tkAkB8SLaMz/HfHdmEaX8tkAkB8SLaMz.m3u8"
+  },
+  {
+    "id": "spongebob-squarepants-sea-side-story-2017",
+    "title": "Spongebob Squarepants: Sea side Story",
+    "year": 2017,
+    "type": "Movie",
+    "genres": ["comedy", "adventure", "animation"],
+    "country": "usa",
+    "rating": 7.6,
+    "thumbnail": "https://s3.lk21static.buzz/wp-content/uploads/2017/04/images.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data2/hKxqVaFfGhJhdwnzK8Cp/hKxqVaFfGhJhdwnzK8Cp.m3u8"
+  },
+  {
+    "id": "spongebob-squarepants-presents-the-tidal-zone-2023",
+    "title": "Spongebob Squarepants: Presents the Tidal Zone",
+    "year": 2023,
+    "type": "Movie",
+    "genres": ["comedy", "adventure", "animation"],
+    "country": "usa",
+    "rating": 5.0,
+    "thumbnail": "https://s5.lk21static.buzz/wp-content/uploads/2023/06/film-spongebob-squarepants-presents-the-tidal-zone-2023-lk21-d21.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data2/fmt6hEv9qnzAedIFHgfe/fmt6hEv9qnzAedIFHgfe.m3u8"
+  },
+  {
+    "id": "this-land-of-mine-2024",
+    "title": "This Land of Mine",
+    "year": 2024,
+    "type": "Movie",
+    "genres": ["misteri", "adventure", "thriller"],
+    "country": "usa",
+    "rating": 5.7,
+    "thumbnail": "https://s0.lk21static.buzz/wp-content/uploads/2025/04/film-this-land-of-mine-2024-lk21-d21.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data1/67edc7ca611fd/67edc7ca611fd.m3u8"
+  },
+  {
+    "id": "nosferatu-2024",
+    "title": "Nosferatu",
+    "year": 2024,
+    "type": "Movie",
+    "genres": ["misteri", "horror", "fantasy"],
+    "country": "uk",
+    "rating": 7.2,
+    "thumbnail": "https://s2.lk21static.buzz/wp-content/uploads/2025/01/film-nosferatu-2024-lk21-d21.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data1/6790b7903b82a/6790b7903b82a.m3u8"
+  },
+  {
+    "id": "smile-2-2024",
+    "title": "Smile 2",
+    "year": 2024,
+    "type": "Movie",
+    "genres": ["misteri", "horror", "thriller"],
+    "country": "usa",
+    "rating": 6.7,
+    "thumbnail": "https://s1.lk21static.buzz/wp-content/uploads/2024/11/film-smile-2-2024-lk21-d21.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data1/678e6942464ad/678e6942464ad.m3u8"
+  },
+  {
+    "id": "the-conjuring-2013",
+    "title": "The Conjuring",
+    "year": 2013,
+    "type": "Movie",
+    "genres": ["horror"],
+    "country": "usa",
+    "rating": 7.5,
+    "thumbnail": "https://s5.lk21static.buzz/wp-content/uploads/2016/01/film-the-conjuring-2013.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data2/4lxk82vrAYykTQx9Ke7n/4lxk82vrAYykTQx9Ke7n.m3u8"
+  },
+  {
+    "id": "peppermint-candy-1999",
+    "title": "Peppermint Candy",
+    "year": 1999,
+    "type": "Movie",
+    "genres": ["drama"],
+    "country": "japan",
+    "rating": 7.6,
+    "thumbnail": "https://s5.lk21static.buzz/wp-content/uploads/2015/12/film-peppermint-candy-1999.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data2/0rVnuZKT1bEdQ9HFwidA/0rVnuZKT1bEdQ9HFwidA.m3u8"
+  },
+  {
+    "id": "satanic-hispanics-2023",
+    "title": "Satanic Hispanics",
+    "year": 2023,
+    "type": "Movie",
+    "genres": ["horror"],
+    "country": "usa",
+    "rating": 5.8,
+    "thumbnail": "https://s2.lk21static.buzz/wp-content/uploads/2023/12/film-satanic-hispanics-2023-lk21-d21.jpg.webp",
+    "videoLink": "https://cdn.turboviplay.com/data2/TsNA9cZurxnIcgum5Avw/TsNA9cZurxnIcgum5Avw.m3u8"
   }
 ]
