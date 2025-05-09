@@ -93,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const movieDetailContainer = document.querySelector('.movie-detail-content');
 
     if (movieDetailContainer) {
+        const breadcrumbTitleElement = document.getElementById('breadcrumb-movie-title');
         const urlParams = new URLSearchParams(window.location.search);
         const movieId = urlParams.get('id');
 
@@ -103,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const ratingElement = document.getElementById('movie-rating');
         const episodeContainer = document.getElementById('episode-buttons-container');
 
-        if (movieId && videoPlayerContainer && titleElement && genresElement && countryElement && ratingElement && episodeContainer) {
+        if (movieId && videoPlayerContainer && titleElement && genresElement && countryElement && ratingElement && episodeContainer && breadcrumbTitleElement) {
             fetch('movies.json')
                 .then(response => {
                     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
@@ -119,6 +120,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         countryElement.textContent = movie.country.toUpperCase();
                         ratingElement.textContent = movie.rating;
 
+                        if (breadcrumbTitleElement) {
+                            breadcrumbTitleElement.textContent = `${movie.title} (${movie.year})`;
+                        }
+
                         function loadVideo(videoUrl) {
                             const videoPlayerContainer = document.getElementById('video-player-container');
                             if (!videoPlayerContainer) return;
@@ -130,14 +135,14 @@ document.addEventListener('DOMContentLoaded', () => {
                             videoPlayerContainer.style.alignItems = '';
                             videoPlayerContainer.style.justifyContent = '';
 
-                            let finalVideoUrl = videoUrl; // Gunakan URL asli
+                            let finalVideoUrl = videoUrl;
 
                             if (finalVideoUrl && finalVideoUrl.toLowerCase().includes('.m3u8')) {
                                 if (Hls.isSupported()) {
                                     videoPlayerContainer.innerHTML = `<video id="hlsPlayer" controls autoplay width="100%" height="100%" style="display: block;"></video>`;
                                     const video = document.getElementById('hlsPlayer');
                                     const hls = new Hls({ startLevel: -1 });
-                                    hls.loadSource(finalVideoUrl); // Gunakan URL asli
+                                    hls.loadSource(finalVideoUrl);
                                     hls.attachMedia(video);
                                     hls.on(Hls.Events.ERROR, function (event, data) {
                                         if (data.fatal) {
@@ -147,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                                 break;
                                               case Hls.ErrorTypes.MEDIA_ERROR:
                                                 videoPlayerContainer.innerHTML = `<p style="color:red;">Error Media saat memutar video. (${data.details})</p>`;
-                                                hls.recoverMediaError(); // Coba recover
+                                                hls.recoverMediaError();
                                                 break;
                                               default:
                                                 videoPlayerContainer.innerHTML = `<p style="color:red;">Error tidak dikenal saat memuat video.</p>`;
@@ -157,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                         }
                                     });
                                 } else if (document.createElement('video').canPlayType('application/vnd.apple.mpegurl')) {
-                                    videoPlayerContainer.innerHTML = `<video id="nativeHlsPlayer" src="${finalVideoUrl}" controls autoplay width="100%" height="100%" style="display: block;"></video>`; // Gunakan URL asli
+                                    videoPlayerContainer.innerHTML = `<video id="nativeHlsPlayer" src="${finalVideoUrl}" controls autoplay width="100%" height="100%" style="display: block;"></video>`;
                                     const video = document.getElementById('nativeHlsPlayer');
                                     video.addEventListener('error', function(e){
                                         videoPlayerContainer.innerHTML = `<p style="color:red;">Gagal memuat video dengan pemutar bawaan browser.</p>`;
@@ -208,7 +213,6 @@ document.addEventListener('DOMContentLoaded', () => {
                                     loadVideo(episodeLink);
                                     setActiveButton(index);
                                 });
-
                                 episodeContainer.appendChild(button);
                             });
 
@@ -216,11 +220,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 loadVideo(movie.videoLink[0]);
                                 setActiveButton(0);
                             }
-
                         } else if (movie.type === "Movie" && typeof movie.videoLink === 'string') {
                             episodeContainer.style.display = 'none';
                             loadVideo(movie.videoLink);
-
                         } else {
                             episodeContainer.style.display = 'none';
                             videoPlayerContainer.textContent = 'Data video tidak tersedia atau format tidak valid.';
@@ -229,6 +231,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     } else {
                         movieDetailContainer.innerHTML = '<p style="color: red; text-align: center;">Film tidak ditemukan.</p>';
                         document.title = "Film Tidak Ditemukan";
+                        if (breadcrumbTitleElement) {
+                            breadcrumbTitleElement.textContent = "Film Tidak Ditemukan";
+                        }
                     }
                 })
                 .catch(error => {
@@ -236,11 +241,20 @@ document.addEventListener('DOMContentLoaded', () => {
                         movieDetailContainer.innerHTML = '<p style="color: red; text-align: center;">Gagal memuat detail film.</p>';
                     }
                     document.title = "Error Memuat Film";
+                    if (breadcrumbTitleElement) {
+                        breadcrumbTitleElement.textContent = "Error";
+                    }
                 });
-        } else if (!movieId && movieDetailContainer) { // Tambah cek movieDetailContainer
+        } else if (!movieId && movieDetailContainer && breadcrumbTitleElement) {
              movieDetailContainer.innerHTML = '<p style="color: orange; text-align: center;">ID Film tidak ditemukan di URL.</p>';
              document.title = "ID Film Hilang";
-        }
+             breadcrumbTitleElement.textContent = "ID Tidak Valid";
+            if (breadcrumbTitleElement) { // Pastikan cek sebelum set
+                breadcrumbTitleElement.textContent = "ID Tidak Valid";
+             }
+            } else if (!breadcrumbTitleElement && movieDetailContainer) { // Jika elemen breadcrumb tidak ada di halaman detail
+                console.warn("Elemen #breadcrumb-movie-title tidak ditemukan di movie.html");
+            }
     } else {
         const mainPageGrid = document.querySelector('.content-grid');
         if (mainPageGrid) {
@@ -261,7 +275,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     return;
                 }
                 movieGrid.innerHTML = '';
-
                 moviesData.forEach(movie => {
                     const movieCardElement = createMovieCard(movie);
                     movieGrid.appendChild(movieCardElement);
@@ -276,7 +289,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const carouselContainer = document.querySelector('.promo-carousel.large');
-
     if (carouselContainer) {
         carouselContainer.addEventListener('click', () => {
             const activeSlide = carouselContainer.querySelector('.carousel-slide.active');
@@ -295,5 +307,4 @@ document.addEventListener('DOMContentLoaded', () => {
     if (negaraSelect) {
         negaraSelect.addEventListener('change', filterMovies);
     }
-
 });
