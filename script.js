@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function createMovieCard(movie) {
         const link = document.createElement('a');
         link.href = `movie.html?id=${movie.id}`;
-        link.target = "_blank";
         link.classList.add('card-link');
         link.dataset.genres = movie.genres.join(' ');
         link.dataset.country = movie.country;
@@ -295,7 +294,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (activeSlide) {
                 const targetUrl = activeSlide.dataset.targetUrl;
                 if (targetUrl) {
-                    window.open(targetUrl, '_blank', 'noopener,noreferrer');
+                    window.location.href = targetUrl;
                 }
             }
         });
