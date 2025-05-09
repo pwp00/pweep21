@@ -354,6 +354,26 @@ footer .social-links a:hover {
     transform: scale(1.03);
     font-weight: bold;
 }
+.breadcrumb-container {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0 5%;
+}
+
+.breadcrumb-container a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.breadcrumb-container a:hover {
+    text-decoration: underline;
+}
+
+#breadcrumb-movie-title {
+    font-weight: bold;
+}
 
 @media (max-width: 768px) {
 
